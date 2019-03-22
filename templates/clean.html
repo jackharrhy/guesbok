@@ -1,0 +1,13 @@
+<head>
+  <title>guesbok - clean</title>
+</head>
+
+<form method="POST">
+  {% for id, entry in entries.items() %}
+    <hr>
+    <input type="checkbox" name="{{ id }}"></input>
+    {{ entry }}
+  {% endfor %}
+  <br>
+  <input type="submit">
+</form>

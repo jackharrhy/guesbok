@@ -7,7 +7,7 @@
   <input type="submit">
 </form>
 
-{% for entry in entries %}
+{% for id, entry in entries.items() %}
   <hr>
   {{ entry|safe }}
 {% endfor %}
