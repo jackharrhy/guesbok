@@ -6,7 +6,7 @@
   {% for id, entry in entries.items() %}
     <hr>
     <input type="checkbox" name="{{ id }}"></input>
-    {{ entry }}
+    <textarea name="bodyfor:{{ id }}">{{ entry }}</textarea>
   {% endfor %}
   <br>
   <input type="submit">
